@@ -1,0 +1,20 @@
+.button {
+    background-color: $c-blue;
+    border: 1px solid $c-blue;
+    border-radius: 35px;
+    @include font (400, 2rem, 2rem, 0.02rem, $c-white);
+
+    &:hover {
+        background: transparent;
+        border: 1px solid $c-blue;
+    }
+}
+
+.header__button {
+    margin-bottom: 239px;
+    padding: 18px 38px;
+
+    @media screen and (max-device-width: 479px) {
+		padding: 16px 62px;
+    }
+}

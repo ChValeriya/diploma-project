@@ -1,0 +1,18 @@
+include ../mixins
+.header__container
+    .header__menu__logo
+        nav.header__menu
+            +Menu
+        .header__logo
+            img(src="./assets/images/header-logo.png", alt="logo")
+    .header__contacts 
+        a.header__contact(href="#") 
+            include ../assets/icons/twitter
+        a.header__contact(href="#") 
+            include ../assets/icons/facebook
+        a.header__contact(href="#") 
+            include ../assets/icons/linkedIn
+    .header__menu__mobile
+        img(src="./assets/images/header-menu.svg", alt="main menu")
+        +Menu
+        

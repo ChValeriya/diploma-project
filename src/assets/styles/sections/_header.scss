@@ -1,0 +1,111 @@
+.header__container {
+    max-width: 1210px;
+    height: 156px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media screen and (max-device-width: 945px) {
+        justify-content: center;
+    }
+
+    @media screen and (max-device-width: 479px) {
+        max-width: 386px;
+        height: 112px;
+        padding: 0;
+        justify-content: space-between;
+    }
+}
+
+.header__menu__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header__menu {
+    width: 437px;
+
+    @media screen and (max-device-width: 479px) {
+        display: none;
+    }
+}
+
+.header__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header__link {
+    z-index: 100;
+
+    a {
+        margin: 10px;
+        @include font(400, 1.5rem, 2.8rem, 0.02rem, $c-white);
+        
+        &:hover {
+            color: $c-blue;
+        }
+    }
+}
+
+.header__logo {
+    padding: 0 35.5px;
+    z-index: 100;
+
+    @media screen and (max-device-width: 479px) {
+        padding: 0 10px;
+    }
+}
+
+.header__contacts {
+    width: 171px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-device-width: 479px) {
+        display: none;
+    }
+
+    .header__contact {
+        z-index: 100;
+        svg {
+            &:hover {
+                transform: scale(1.2);
+                path {
+                    fill: $c-blue;
+                }
+            }
+        }
+    }
+}
+
+.header__menu__mobile {
+    z-index: 100;
+    position: relative;
+
+    .header__links {
+        display: none;
+        position: absolute;
+        right: 10px;
+    }
+
+    &:hover .header__links {
+        display: block;
+    }
+
+    @media screen and (min-device-width: 480px) {
+        display: none;
+    }
+}
