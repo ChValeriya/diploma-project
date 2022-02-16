@@ -7,6 +7,12 @@
     &:hover {
         background: transparent;
         border: 1px solid $c-blue;
+        transition: all 1s ease;
+    }
+
+    &:active {
+        transform: scale(0.9);
+        transition: all 0.3s ease;
     }
 }
 
@@ -14,7 +20,20 @@
     margin-bottom: 239px;
     padding: 18px 38px;
 
-    @media screen and (max-device-width: 479px) {
+    @media screen and (max-device-width: 576px) {
 		padding: 16px 62px;
+    }
+}
+
+.offer__button {
+    font-weight: 700;
+    padding: 18px 38px;
+
+    &:hover {
+        color: $c-black-subtitle;
+    }
+
+    @media screen and (max-device-width: 576px) {
+		padding: 16px 59.5px;
     }
 }
