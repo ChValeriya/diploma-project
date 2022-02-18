@@ -452,10 +452,14 @@ header, main, footer {
 .features__cards .features__card svg:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .features__cards .features__card svg:hover path {
   fill: #374754;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .features__cards .features__card .card__title {
@@ -495,6 +499,8 @@ header, main, footer {
 .features__video img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 @media screen and (max-device-width: 639px) {

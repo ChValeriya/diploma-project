@@ -5,20 +5,8 @@
     .features__video__mobile
         img(src="../assets/images/features-video-mobile.png", alt="feature video")
     .features__cards 
-        .features__card 
-            .card__image
-                include ../assets/icons/features-fonts
-            .card__title OpenType features Variable fonts
-            .card__subtitle Slate helps you see how many more days you need to work to reach your financial goal.
-        .features__card 
-            .card__image
-                include ../assets/icons/features-design
-            .card__title Design with real data
-            .card__subtitle Slate helps you see how many more days you need to work to reach your financial goal.
-        .features__card 
-            .card__image
-                include ../assets/icons/features-action
-            .card__title.title__width Fastest way to take action
-            .card__subtitle Slate helps you see how many more days you need to work to reach your financial goal.
+        each val in FeaturesCard
+            include ../mixins
+            +Features(val.img, val.title, val.subtitle)
     .features__video
         img(src="../assets/images/features-video.png", alt="feature video")
