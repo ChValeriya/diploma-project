@@ -15,25 +15,3 @@
         transition: all 0.3s ease;
     }
 }
-
-.header__button {
-    margin-bottom: 239px;
-    padding: 18px 38px;
-
-    @media screen and (max-device-width: 576px) {
-		padding: 16px 62px;
-    }
-}
-
-.offer__button {
-    font-weight: 700;
-    padding: 18px 38px;
-
-    &:hover {
-        color: $c-black-subtitle;
-    }
-
-    @media screen and (max-device-width: 576px) {
-		padding: 16px 59.5px;
-    }
-}
