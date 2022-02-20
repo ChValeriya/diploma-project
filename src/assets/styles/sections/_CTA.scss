@@ -8,7 +8,7 @@
     grid-template-rows: 1fr 1fr;
     column-gap: 113px;
 
-    @media screen and (max-device-width: 576px) {
+    @media screen and (max-device-width: 992px) {
         padding: 78px 0px;
         grid-template-columns: 1fr;
         grid-template-rows: 0.263fr 0.421fr 0.316fr;
@@ -22,11 +22,12 @@
     align-self: center;
     text-align: end;
 
-    @media screen and (max-device-width: 576px) {
+    @media screen and (max-device-width: 992px) {
         max-width: 389px;
         max-height: 295px;
         margin: 0 auto;
         text-align: center;
+        grid-column: 1 / 2;
         grid-row: 2 / 3;
     }
 
@@ -35,7 +36,7 @@
     }
 
         svg {
-            @media screen and (max-device-width: 576px) {
+            @media screen and (max-device-width: 992px) {
                 max-width: 389px;
                 max-height: 295px;
             }
@@ -56,10 +57,10 @@
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 
-    @media screen and (max-device-width: 1006px) {
+    @media screen and (max-device-width: 992px) {
         padding: 0;
         text-align: center;
-        grid-column: auto;
+        grid-column: 1 / 2;
     }
     
     .cta__title {
@@ -97,10 +98,10 @@
     grid-row: 2 / 3;
     text-align: center;
 
-    @media screen and (max-device-width: 576px) {
+    @media screen and (max-device-width: 992px) {
         padding: 10px;
         margin: 0 auto;
-        grid-column: auto;
+        grid-column: 1 / 2;
         grid-row: 3 / 4;
     }
 

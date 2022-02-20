@@ -17,5 +17,47 @@
             "title": "Fastest way to take action", 
             "subtitle": "Slate helps you see how many more days you need to work to reach your financial goal."
         }
+    ],
+
+    "PartnersCard": [
+        {
+            "src": "./assets/images/logo-google.svg",
+            "alt": "Google logo"
+        },
+
+        {
+            "src": "./assets/images/logo-amazon.svg",
+            "alt": "Amazon logo"
+        },
+
+        {
+            "src": "./assets/images/logo-microsoft.svg",
+            "alt": "Microsoft logo"
+        },
+
+        {
+            "src": "./assets/images/logo-uber.svg",
+            "alt": "Uber logo"
+        },
+
+        {
+            "src": "./assets/images/logo-dropbox.svg",
+            "alt": "Dropbox logo"
+        },
+
+        {
+            "src": "./assets/images/logo-google.svg",
+            "alt": "Google logo"
+        },
+
+        {
+            "src": "./assets/images/logo-uber.svg",
+            "alt": "Uber logo"
+        },
+
+        {
+            "src": "./assets/images/logo-amazon.svg",
+            "alt": "Amazon logo"
+        }
     ]
 }

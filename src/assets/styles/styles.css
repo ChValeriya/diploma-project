@@ -651,7 +651,7 @@ header, main, footer {
           column-gap: 113px;
 }
 
-@media screen and (max-device-width: 576px) {
+@media screen and (max-device-width: 992px) {
   .cta__container {
     padding: 78px 0px;
     -ms-grid-columns: 1fr;
@@ -675,12 +675,15 @@ header, main, footer {
   text-align: end;
 }
 
-@media screen and (max-device-width: 576px) {
+@media screen and (max-device-width: 992px) {
   .cta__img {
     max-width: 389px;
     max-height: 295px;
     margin: 0 auto;
     text-align: center;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
@@ -693,7 +696,7 @@ header, main, footer {
   }
 }
 
-@media screen and (max-device-width: 576px) {
+@media screen and (max-device-width: 992px) {
   .cta__img svg {
     max-width: 389px;
     max-height: 295px;
@@ -722,11 +725,13 @@ header, main, footer {
   grid-row: 1 / 2;
 }
 
-@media screen and (max-device-width: 1006px) {
+@media screen and (max-device-width: 992px) {
   .cta__content {
     padding: 0;
     text-align: center;
-    grid-column: auto;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
   }
 }
 
@@ -781,11 +786,13 @@ header, main, footer {
   text-align: center;
 }
 
-@media screen and (max-device-width: 576px) {
+@media screen and (max-device-width: 992px) {
   .cta__subscribe {
     padding: 10px;
     margin: 0 auto;
-    grid-column: auto;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3 / 4;
@@ -903,6 +910,130 @@ header, main, footer {
 @media screen and (max-device-width: 353px) {
   .cta__button {
     padding: 17px 112px;
+  }
+}
+
+.partners__container {
+  max-width: 1090px;
+  margin: 0 auto;
+  padding-top: 130px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+@media screen and (max-device-width: 576px) {
+  .partners__container {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+}
+
+.partners__title {
+  margin-bottom: 27px;
+}
+
+.partners__subtitle {
+  max-width: 532px;
+  margin: 0 auto;
+}
+
+@media screen and (max-device-width: 576px) {
+  .partners__subtitle span {
+    display: none;
+  }
+}
+
+.partners__cards {
+  margin-top: 90px;
+  margin-bottom: 83px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+@media screen and (max-device-width: 576px) {
+  .partners__cards {
+    margin-top: 105px;
+    margin-bottom: 0;
+  }
+}
+
+.partners__cards .partners__card {
+  height: 165px;
+  padding: 0 40px;
+  border: 1px solid #D8D8D8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-device-width: 576px) {
+  .partners__cards .partners__card {
+    width: 275px;
+    height: auto;
+    margin-bottom: 30px;
+    padding: 25px 0;
+  }
+}
+
+@media screen and (max-device-width: 576px) {
+  .partners__cards .partners__card:nth-child(4), .partners__cards .partners__card:nth-child(5), .partners__cards .partners__card:nth-child(6), .partners__cards .partners__card:nth-child(7), .partners__cards .partners__card:nth-child(8) {
+    display: none;
+  }
+}
+
+.partners__cards .partners__card .partners__text {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.01rem;
+  color: #374754;
+  margin-bottom: 12px;
+}
+
+.partners__cards .partners__card .partners__logos:hover img {
+  display: block;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.partners__button {
+  padding: 18px 38px;
+}
+
+.partners__button:hover {
+  color: #374754;
+}
+
+@media screen and (max-device-width: 576px) {
+  .partners__button {
+    margin-top: 65px;
+    padding: 16px 59.5px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
