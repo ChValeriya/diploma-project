@@ -1,0 +1,9 @@
+.partners__container 
+    .title.partners__title Partners
+    .subtitle.partners__subtitle Most calendars are designed for teams. 
+        span Slate is designed for freelancers
+    .partners__cards
+        each val in PartnersCard
+            include ../mixins
+            +Partners(text, src, alt)
+    button.button.partners__button Try For Free

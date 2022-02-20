@@ -8,20 +8,28 @@
         background: transparent;
         border: 1px solid $c-blue;
         transition: all 1s ease;
+<<<<<<< HEAD
     }
 
     &:active {
         transform: scale(0.9);
         transition: all 0.3s ease;
+=======
+>>>>>>> e1e1074eb694dc427809852828e33c87bec396e7
     }
-}
 
+<<<<<<< HEAD
 .header__button {
     margin-bottom: 239px;
     padding: 18px 38px;
 
     @media screen and (max-device-width: 576px) {
 		padding: 16px 62px;
+=======
+    &:active {
+        transform: scale(0.9);
+        transition: all 0.3s ease;
+>>>>>>> e1e1074eb694dc427809852828e33c87bec396e7
     }
 }
 
