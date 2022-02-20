@@ -105,6 +105,10 @@
         grid-row: 3 / 4;
     }
 
+    @media screen and (max-device-width: 353px) {
+        width: 320px;
+    }
+
     .cta__smallsubtitle {
         @include font (400, 1.8rem, 2.5rem, 0.01rem, $c-black-subtitle);
         margin-bottom: 30px;
@@ -143,7 +147,7 @@
     }
 
     @media screen and (max-device-width: 353px) {
-        width: 320px;
+        width: 300px;
     }
 }
 
@@ -162,6 +166,6 @@
     }
 
     @media screen and (max-device-width: 353px) {
-		padding: 17px 112px;
+		padding: 17px 100px;
     }
 }
