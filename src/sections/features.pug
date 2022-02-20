@@ -1,0 +1,12 @@
+.features__container 
+    h2.title.features__title Features 
+    h4.subtitle.features__subtitle Most calendars are designed for teams. 
+        span Slate is designed for freelancers
+    .features__video__mobile
+        img(src="../assets/images/features-video-mobile.png", alt="feature video")
+    .features__cards 
+        each val in FeaturesCard
+            include ../mixins
+            +Features(val.img, val.title, val.subtitle)
+    .features__video
+        img(src="../assets/images/features-video.png", alt="feature video")

@@ -1,0 +1,119 @@
+.features__container {
+    max-width: 845px;
+    padding-top: 130px;
+    margin: 0 auto;
+    text-align: center;
+
+    @media screen and (max-device-width: 576px) {
+        padding-top: 117px;
+    }
+}
+
+.title {
+    @include font (400, 4.8rem, 5.5rem, 0.02rem, $c-black-title);
+}
+
+.features__title {
+    margin-bottom: 27px;
+}
+
+.subtitle {
+    @include font (400, 2.8rem, 4.0rem, 0.02rem, $c-black-subtitle);
+}
+
+.features__subtitle {
+    max-width: 532px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+
+    @media screen and (max-device-width: 576px) {
+        max-width: 285px;
+    }
+
+    span {
+        @media screen and (max-device-width: 576px) {
+            display: none;
+        }
+    }
+}
+
+.features__video__mobile {
+    margin-bottom: 10px;
+
+    @media screen and (min-device-width: 577px) {
+        display: none;
+    }
+    
+    img {
+        @media screen and (max-device-width: 417px) {
+            max-width: 320px;
+        }
+    }
+}
+
+.features__cards {
+    padding-top: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-device-width: 692px) {
+        justify-content: center;
+    }
+
+    .features__card {
+        max-width: 231px;
+
+        @media screen and (max-device-width: 692px) {
+            margin-bottom: 80px;
+        }
+
+        svg {
+            &:hover {
+                transform: scale(1.1);
+                transition: all 0.3s ease;
+                path {
+                    fill: $c-black-subtitle;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+
+        .card__title {
+            padding-top: 27px;
+            padding-bottom: 20px;
+            @include font (700, 2.0rem, 2.8rem, 0.01rem, $c-black-title);
+        }
+
+        .card__subtitle {
+            @include font (400, 1.8rem, 2.5rem, 0.02rem, $c-black-subtitle);
+        }
+
+        .title__width {
+            max-width: 144px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.features__video {
+    margin: 0 auto;
+    margin-top: 102px;
+
+    @media screen and (max-device-width: 576px) {
+        display: none;
+    }
+
+    img {
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+        }
+        
+        @media screen and (max-device-width: 639px) {
+            max-width: 480px;
+        }    
+    }
+}

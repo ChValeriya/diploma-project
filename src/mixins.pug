@@ -10,3 +10,15 @@ mixin Menu
             a(href="#") About 
         li.header__link
             a(href="#") Contact
+            
+mixin Features(img, title, subtitle)
+    .features__card 
+        .card__image !{val.img}
+        .card__title= val.title
+        .card__subtitle= val.subtitle
+
+mixin Partners(text= 'Client Name', src, alt)
+    .partners__card 
+        .partners__text= text
+        .partners__logos
+            img(src= val.src, alt= val.alt)
