@@ -1,0 +1,133 @@
+.pricing {
+    background-color: $c-black-title;
+}
+
+.pricing__container {
+    max-width: 1105px;
+    padding-top: 112px;
+    padding-bottom: 143px;
+    margin: 0 auto;
+    text-align: center;
+
+    @media screen and (max-device-width: 576px) {
+        padding-top: 123px;
+        padding-bottom: 73px;
+    }
+}
+
+.pricing__title, .pricing__subtitle {
+    color: $c-white;
+}
+
+.pricing__subtitle {
+    max-width: 532px;
+    padding-top: 27px;
+    padding-bottom: 133px;
+    margin: 0 auto;
+
+    @media screen and (max-device-width: 576px) {
+        max-width: 265px;
+        padding-bottom: 108px;
+    }
+
+    span {
+        @media screen and (max-device-width: 576px) {
+            display: none;
+        }
+    }
+}
+
+.pricing__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-device-width: 1004px) {
+        justify-content: center;
+    }
+}
+
+.pricing__card {
+    width: 335px;
+    padding: 40px;
+    background-color: $c-white;
+    border: $c-pricing-border;
+    border-radius: 10px;
+
+    @media screen and (max-device-width: 1004px) {
+        margin-bottom: 45px;
+    }
+
+    @media screen and (max-device-width: 335px) {
+        width: 310px;
+    }
+
+    &:hover {
+        background-color: $c-blue;
+        transform: scaleY(1.14);
+        transition: all 0.3 ease;
+
+        .pricing__tariff, .pricing__text {
+            color: $c-white;
+        }
+
+        .pricing__sum {
+            .pricing__number, .pricing__dollar {
+                color: $c-white;
+            }
+        }
+    }
+
+    .pricing__tariff {
+        margin: 5px 0;
+        @include font (700, 2.0rem, 2.8rem, 0.01rem, $c-black-title);
+    }
+
+    .pricing__text {
+        max-width: 148px;
+        margin: 0 auto;
+        @include font (400, 1.6rem, 2.3rem, 0.01rem, $c-black-subtitle);
+    }
+
+    .pricing__sum {
+        max-width: 198px;
+        padding: 18px 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: start;
+
+        .pricing__number {
+            margin: 0 10px;
+            @include font (700, 7.4rem, 8.4rem, 0.02rem, $c-black-title);
+        }
+
+        .pricing__dollar {
+            margin-top: 10px;
+            @include font (700, 2.0rem, 2.8rem, 0.01rem, $c-black-title);
+        }
+    }
+
+    .pricing__feature {
+        padding: 10px;
+        @include font (400, 1.5rem, 2.8rem, 0.02rem, $c-black-title);
+    }
+
+    .pricing__button {
+        margin-top: 30px;
+        padding: 18px 38px;
+    
+        @media screen and (max-device-width: 576px) {
+            padding: 18px 75.5px;
+        }
+        
+        &:hover {
+            @media screen and (max-device-width: 576px) {
+                background-color: $c-white;
+                color: $c-blue;
+            }
+        }
+    }
+}
