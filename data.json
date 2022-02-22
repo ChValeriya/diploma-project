@@ -59,5 +59,25 @@
             "src": "./assets/images/logo-amazon.svg",
             "alt": "Amazon logo"
         }
+    ],
+
+    "PricingCard": [
+        {
+            "tariff": "FREE",
+            "text": "Organize across all apps by hand",
+            "number": "0"
+        },
+
+        {
+            "tariff": "STANDARD",
+            "text": "Organize across all apps by hand",
+            "number": "10"
+        },
+
+        {
+            "tariff": "BUSINESS",
+            "text": "Organize across all apps by hand",
+            "number": "99"
+        }
     ]
 }
