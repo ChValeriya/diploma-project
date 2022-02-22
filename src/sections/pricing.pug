@@ -1,0 +1,8 @@
+.pricing__container
+    h2.title.pricing__title Pricing
+    h4.subtitle.pricing__subtitle Most calendars are designed for teams. 
+        span Slate is designed for freelancers
+    .pricing__cards
+        each val in PricingCard
+            include ../mixins
+            +Pricing(tariff, text, number, feature1, feature2, feature3, feature4, feature5)
