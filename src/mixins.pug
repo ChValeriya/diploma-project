@@ -38,3 +38,12 @@ mixin Pricing(tariff, text, number, features)
             h5.pricing__feature= feature
             
         button.button.pricing__button Order Now
+
+mixin FooterMenu(title, ...items)
+    .footer__section 
+        h3.footer__title= title
+        nav.footer__menu
+            ul.footer__links 
+                each item in items
+                    li.footer__link
+                        a(href="#")= item

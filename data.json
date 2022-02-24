@@ -112,5 +112,8 @@
     
     "ContactsLocation": "6386 Spring St undefined Anchorage, Georgia 12473 United States",
     "ContactsTel": "(843) 555-0130",
-    "ContactsMail": "willie.jennings@example.com"
+    "ContactsMail": "willie.jennings@example.com",
+
+    "FooterLocation": "7480 Mockingbird Hill undefined",
+    "FooterTel": "(239) 555-0108"
 }
