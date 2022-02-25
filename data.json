@@ -21,41 +21,49 @@
 
     "PartnersCard": [
         {
+            "text": "Client Name",
             "src": "./assets/images/logo-google.svg",
             "alt": "Google logo"
         },
 
         {
+            "text": "Client Name",
             "src": "./assets/images/logo-amazon.svg",
             "alt": "Amazon logo"
         },
 
         {
+            "text": "Client Name",
             "src": "./assets/images/logo-microsoft.svg",
             "alt": "Microsoft logo"
         },
 
         {
+            "text": "Client Name",
             "src": "./assets/images/logo-uber.svg",
             "alt": "Uber logo"
         },
 
         {
+            "text": "Client Name",
             "src": "./assets/images/logo-dropbox.svg",
             "alt": "Dropbox logo"
         },
 
         {
+            "text": "Client Name",
             "src": "./assets/images/logo-google.svg",
             "alt": "Google logo"
         },
 
         {
+            "text": "Client Name",
             "src": "./assets/images/logo-uber.svg",
             "alt": "Uber logo"
         },
 
         {
+            "text": "Client Name",
             "src": "./assets/images/logo-amazon.svg",
             "alt": "Amazon logo"
         }
@@ -65,19 +73,47 @@
         {
             "tariff": "FREE",
             "text": "Organize across all apps by hand",
-            "number": "0"
+            "number": "0",
+            "features": [
+                "Pricing Feature",
+                "Pricing Feature",
+                "Pricing Feature",
+                "Pricing Feature",
+                "Pricing Feature"
+            ]
         },
 
         {
             "tariff": "STANDARD",
             "text": "Organize across all apps by hand",
-            "number": "10"
+            "number": "10",
+            "features": [
+                "Pricing Feature",
+                "Pricing Feature",
+                "Pricing Feature",
+                "Pricing Feature",
+                "Pricing Feature"
+            ]
         },
 
         {
             "tariff": "BUSINESS",
             "text": "Organize across all apps by hand",
-            "number": "99"
+            "number": "99",
+            "features": [
+                "Pricing Feature",
+                "Pricing Feature",
+                "Pricing Feature",
+                "Pricing Feature",
+                "Pricing Feature"
+            ]
         }
-    ]
+    ],
+    
+    "ContactsLocation": "6386 Spring St undefined Anchorage, Georgia 12473 United States",
+    "ContactsTel": "(843) 555-0130",
+    "ContactsMail": "willie.jennings@example.com",
+
+    "FooterLocation": "7480 Mockingbird Hill undefined",
+    "FooterTel": "(239) 555-0108"
 }

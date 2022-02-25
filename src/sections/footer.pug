@@ -1,0 +1,20 @@
+include ../mixins
+.footer__container
+    .footer__content
+        +FooterMenu('Pages', 'Home', 'Product', 'Pricing', 'About', 'Contact')
+        +FooterMenu('Tomothy', 'Eleanor Edwards', 'Ted Robertson', 'Annette Russell', 'Jennie Mckinney', 'Gloria Richards')
+        +FooterMenu('Jane Black', 'Philip Jones', 'Product', 'Colleen Russell', 'Marvin Hawkins', 'Bruce Simmmon')
+    .footer__contacts
+        .footer__communication 
+            include ../assets/icons/location
+            h5.communication__descr= FooterLocation
+        .footer__communication 
+            include ../assets/icons/phone
+            h5.communication__descr= FooterTel
+        .footer__social 
+            a.footer__link(href="#") 
+                include ../assets/icons/twitter
+            a.footer__link(href="#") 
+                include ../assets/icons/facebook
+            a.footer__link(href="#") 
+                include ../assets/icons/linkedIn

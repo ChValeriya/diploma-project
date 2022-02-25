@@ -1,5 +1,5 @@
 mixin Menu
-    ul.header__links 
+    ul.header__links
         li.header__link
             a(href="#") Home
         li.header__link
@@ -13,28 +13,37 @@ mixin Menu
             
 mixin Features(img, title, subtitle)
     .features__card 
-        .card__image !{val.img}
-        .card__title= val.title
-        .card__subtitle= val.subtitle
+        .card__image !{img}
+        .card__title= title
+        .card__subtitle= subtitle
 
-mixin Partners(text= 'Client Name', src, alt)
+mixin Partners(text, src, alt)
     .partners__card 
         .partners__text= text
         .partners__logos
-            img(src= val.src, alt= val.alt)
+            img(src= src, alt= alt)
 
-mixin Pricing(tariff, text, number, feature1= 'Pricing Feature', feature2= 'Pricing Feature', feature3= 'Pricing Feature', feature4= 'Pricing Feature', feature5= 'Pricing Feature')
+mixin Pricing(tariff, text, number, features)
     .pricing__card 
-        h3.pricing__tariff= val.tariff
-        h5.pricing__text= val.text
+        h3.pricing__tariff= tariff
+        h5.pricing__text= text
+
         .pricing__sum
-            h2.pricing__number= val.number
+            h2.pricing__number= number
             .pricing__number__inf
                 h3.pricing__dollar $
                 h5.pricing__text.pricing__period Per Month
-        h5.pricing__feature= feature1
-        h5.pricing__feature= feature2
-        h5.pricing__feature= feature3
-        h5.pricing__feature= feature4
-        h5.pricing__feature= feature5
+
+        each feature in features
+            h5.pricing__feature= feature
+            
         button.button.pricing__button Order Now
+
+mixin FooterMenu(title, ...items)
+    .footer__section 
+        h3.footer__title= title
+        nav.footer__menu
+            ul.footer__links 
+                each item in items
+                    li.footer__link
+                        a(href="#")= item
