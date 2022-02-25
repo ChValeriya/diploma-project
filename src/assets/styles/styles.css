@@ -60,7 +60,8 @@ header, main, footer {
   max-width: 1210px;
   height: 156px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding-left: 30px;
+  padding-right: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,8 +117,12 @@ header, main, footer {
 }
 
 @media screen and (max-device-width: 576px) {
-  .header__menu {
-    display: none;
+  .header__menu__logo {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: start;
   }
 }
 
@@ -139,14 +144,41 @@ header, main, footer {
       flex-wrap: wrap;
 }
 
+@media screen and (max-device-width: 576px) {
+  .header__links {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    background-color: #252B42;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .header__link {
   z-index: 100;
   padding: 10px;
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 .header__link:last-child {
   margin: 0;
+}
+
+@media screen and (max-device-width: 576px) {
+  .header__link {
+    margin: 0;
+  }
 }
 
 .header__link a {
@@ -161,6 +193,16 @@ header, main, footer {
   color: #2091F9;
 }
 
+@media screen and (max-device-width: 576px) {
+  .header__link a {
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 4rem;
+    letter-spacing: 0.02rem;
+    color: #FFFFFF;
+  }
+}
+
 .header__logo {
   padding: 0 35.5px;
   z-index: 100;
@@ -168,8 +210,33 @@ header, main, footer {
 
 @media screen and (max-device-width: 576px) {
   .header__logo {
-    padding: 0 10px;
+    display: none;
   }
+}
+
+.header__logo__mobile {
+  padding: 0 10px;
+  z-index: 100;
+}
+
+@media screen and (min-device-width: 577px) {
+  .header__logo__mobile {
+    display: none;
+  }
+}
+
+.burger {
+  z-index: 100;
+}
+
+@media screen and (min-device-width: 577px) {
+  .burger {
+    display: none;
+  }
+}
+
+input:checked + .burger + .header__links {
+  right: 0;
 }
 
 .header__contacts {
@@ -206,31 +273,6 @@ header, main, footer {
 
 .header__contacts .header__contact svg:hover path {
   fill: #2091F9;
-}
-
-.header__menu__mobile {
-  z-index: 100;
-  position: relative;
-}
-
-.header__menu__mobile .header__links {
-  display: none;
-  position: absolute;
-  right: 10px;
-}
-
-.header__menu__mobile .header__links .header__link {
-  padding: 0;
-}
-
-.header__menu__mobile:hover .header__links {
-  display: block;
-}
-
-@media screen and (min-device-width: 577px) {
-  .header__menu__mobile {
-    display: none;
-  }
 }
 
 .hero__container {
