@@ -64,10 +64,17 @@ function startWatch() {
     watch('src/assets/styles/**/*.scss', css)
     watch('src/assets/images/**/*', images)
     watch('src/assets/fonts/**/*', fonts)
+    watch('src/script.js', js)
+} 
+
+function js() {
+    return src('src/script.js')
+        .pipe(dest('build'))
+        .pipe(browserSync.stream())
 }
 
-exports.dev = parallel(browsersync, startWatch, html, images, fonts, css)
-exports.build = series(clear, parallel(html, images, fonts, css))
+exports.dev = parallel(browsersync, startWatch, html, images, fonts, css, js)
+exports.build = series(clear, parallel(html, images, fonts, css, js))
 
 
 exports.default = series(browsersync, startWatch, html, images, fonts, css)

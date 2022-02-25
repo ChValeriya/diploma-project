@@ -1,0 +1,29 @@
+.contacts__container
+    h2.title.contacts__title Contact Us
+    h3.subtitle.contacts__subtitle Most calendars are designed for teams. 
+        span Slate is designed for freelancers
+    .contacts__content
+        form(action="" method="post").contacts__form
+            h3.contacts__form__title Contact Us
+            input(type="text" placeholder="Your Name").contacts__email
+            input(type="email" placeholder="Your Email").contacts__email
+            textarea(placeholder="Your Message").contacts__message
+            input(type="submit" value="Send").button.contacts__button
+        .contacts__data 
+            .contacts__communication 
+                include ../assets/icons/location
+                h5.communication__descr= ContactsLocation
+            .contacts__communication 
+                include ../assets/icons/phone
+                h5.communication__descr= ContactsTel
+            .contacts__communication
+                include ../assets/icons/mail
+                h5.communication__descr= ContactsMail
+        img.contacts__map(src="../assets/images/map.png", alt="location on the map")
+        .contacts__social 
+            a.contacts__link(href="#") 
+                include ../assets/icons/twitter
+            a.contacts__link(href="#") 
+                include ../assets/icons/facebook
+            a.contacts__link(href="#") 
+                include ../assets/icons/linkedIn
